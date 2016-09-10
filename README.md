@@ -150,3 +150,7 @@ func reachabilityChanged(notification: NSNotification) {
 ## Tell the world
 
 Head over to [Projects using Reachability](https://github.com/tonymillion/Reachability/wiki/Projects-using-Reachability) and add your project for "Maximum Wins!".
+
+## Check 2G, 3G, 4G network type
+
+3 new methods: isReachableVia2G, isReachableVia3G, isReachableVia4G.

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A87DA1641D84359D0061F147 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87DA1631D84359D0061F147 /* CoreTelephony.framework */; };
 		EAEB207C147A7ED2009545B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB207B147A7ED2009545B6 /* UIKit.framework */; };
 		EAEB207E147A7ED2009545B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB207D147A7ED2009545B6 /* Foundation.framework */; };
 		EAEB2080147A7ED2009545B6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB207F147A7ED2009545B6 /* CoreGraphics.framework */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A87DA1631D84359D0061F147 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		EAEB2077147A7ED2009545B6 /* iOSReachabilityTestARC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSReachabilityTestARC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAEB207B147A7ED2009545B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EAEB207D147A7ED2009545B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A87DA1641D84359D0061F147 /* CoreTelephony.framework in Frameworks */,
 				EAEB209C147A7F00009545B6 /* SystemConfiguration.framework in Frameworks */,
 				EAEB207C147A7ED2009545B6 /* UIKit.framework in Frameworks */,
 				EAEB207E147A7ED2009545B6 /* Foundation.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		EAEB207A147A7ED2009545B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A87DA1631D84359D0061F147 /* CoreTelephony.framework */,
 				EAEB209B147A7F00009545B6 /* SystemConfiguration.framework */,
 				EAEB207B147A7ED2009545B6 /* UIKit.framework */,
 				EAEB207D147A7ED2009545B6 /* Foundation.framework */,

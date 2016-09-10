@@ -49,7 +49,10 @@ typedef NS_ENUM(NSInteger, NetworkStatus) {
     // Apple NetworkStatus Compatible Names.
     NotReachable = 0,
     ReachableViaWiFi = 2,
-    ReachableViaWWAN = 1
+    ReachableViaWWAN = 1,
+    ReachableVia2G   = 3,
+    ReachableVia3G   = 4,
+    ReachableVia4G   = 5
 };
 
 @class Reachability;
@@ -83,6 +86,9 @@ typedef void (^NetworkReachability)(Reachability * reachability, SCNetworkConnec
 
 -(BOOL)isReachable;
 -(BOOL)isReachableViaWWAN;
+-(BOOL)isReachableVia2G;
+-(BOOL)isReachableVia3G;
+-(BOOL)isReachableVia4G;
 -(BOOL)isReachableViaWiFi;
 
 // WWAN may be available, but not active until a connection has been established.
