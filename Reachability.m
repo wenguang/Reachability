@@ -529,11 +529,26 @@ static void TMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRea
 {
 	NetworkStatus temp = [self currentReachabilityStatus];
 	
+#if	TARGET_OS_IPHONE
+    if (temp == ReachableVia2G)
+    {
+        return NSLocalizedString(@"2G", @"");
+    }
+    if (temp == ReachableVia3G)
+    {
+        return NSLocalizedString(@"3G", @"");
+    }
+    if (temp == ReachableVia4G)
+    {
+        return NSLocalizedString(@"4G", @"");
+    }
 	if(temp == ReachableViaWWAN)
 	{
         // Updated for the fact that we have CDMA phones now!
 		return NSLocalizedString(@"Cellular", @"");
 	}
+#endif
+
 	if (temp == ReachableViaWiFi) 
 	{
 		return NSLocalizedString(@"WiFi", @"");
